@@ -1,0 +1,43 @@
+html {
+  font-family: $primary-font !important;
+}
+
+body {
+  font-family: $primary-font !important;
+  margin: 0;
+  padding: 0;
+  color: $color-dark-grey; //#2c2c2c
+}
+
+p {
+  font-size: $font-medium;
+  font-weight: $font-weight-light;
+}
+
+h1 {
+  font-size: 26px;
+  margin: 0;
+  padding: 8px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 8px 0;
+  color: $color-dark-grey;
+  font-weight: $font-weight-light;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 0;
+  padding: 8px 0;
+  color: $color-dark-grey;
+  font-weight: $font-weight-light;
+  letter-spacing: 0.02em;
+}
+
+.clear {
+  clear: both;
+}

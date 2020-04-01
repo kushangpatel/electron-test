@@ -1,0 +1,389 @@
+/* this file will be extracted to main dist folder and is imported in index.html */
+/* This file is for setting global styles  */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import 'variables';
+@import 'app.theme.scss';
+@import 'common.scss';
+@import 'loader.scss';
+
+/**
+ * Top nav bar
+ */
+ .mat-toolbar {
+  -webkit-app-region: drag;
+  min-height: 80px !important;
+  background-color: $color-dark-grey !important;
+  z-index: 1000;
+  position: fixed;
+}
+
+.mat-toolbar-row {
+  height: 80px !important;
+  font-family: $primary-font !important;
+  font-size: $font-small !important;
+}
+
+.top-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  height: 100%;
+}
+
+.top-nav > li {
+  float: left;
+  height: 100%;
+}
+
+.top-nav > li > a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px;
+}
+
+.top-nav > li > a:hover {
+  background-color: #111111;
+}
+
+.top-nav > li > a.active {
+  background-color: #111111;
+}
+/**
+ * Top nav bar ends
+ */
+
+.custom-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0 0 40px 0;
+}
+
+.custom-main-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+}
+
+ /**
+ * Sidebar
+ */
+.sidebar-container {
+  float: left;
+  min-width: 220px;
+  max-width: 220px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  letter-spacing: 1px;
+  margin: 80px 0 100px 0;
+}
+
+.sidebar-container-right {
+  float: right;
+  min-width: 220px;
+  max-width: 220px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  letter-spacing: 1px;
+  margin: 80px 0 100px 0;
+}
+
+.sidebar {
+  width: 220px;
+  position: fixed;
+  padding: 24px 0px;
+  height: 100%;
+}
+
+.sidebar-profile {
+  height: 128px;
+  width: 100%;
+  background-color: $color-primary;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 24px 0px;
+}
+
+.sidebar ul > li > a {
+  display: block;
+  padding: 12px 24px;
+  color: $color-light-grey-secondary;
+  font-style: $font-weight-bolder;
+  text-transform: uppercase;
+  font-size: $font-small;
+}
+
+.sidebar ul > li > a:hover {
+  color: $color-dark-grey;
+  text-decoration: none;
+  outline: none;
+}
+
+.sidebar ul > li > a.active {
+  color: $color-primary-alpha;
+  background-color: $color-primary-alpha-light;
+  text-decoration: none;
+  outline: none;
+}
+
+.sidebar ul > li > a:link {
+  outline: none;
+}
+
+.sidebar ul > li > a:visited {
+  outline: none;
+}
+
+.sidebar ul > li > a:active {
+  outline: none;
+}
+/**
+ * Sidebar ends
+ */
+
+main {
+  padding: 30px 0 0 0;
+  height: 100%;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.border-right {
+  border-right: 1px solid $color-alpha-black;
+}
+
+.border-left {
+  border-left: 1px solid $color-alpha-black;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $color-alpha-black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mat-card-small {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.horizontal-center {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.toolbar-btn {
+  -webkit-app-region: no-drag;
+}
+
+.fill-space {
+  flex: 1 1 auto;
+}
+
+.medium-form-container {
+  width: 300px;
+  margin: 20px auto;
+}
+
+h2.inner-component-title {
+  font-size: $font-xlarge;
+  padding: 0;
+}
+
+h2.inner-component-title {
+  small {
+    font-size: $font-xsmall;
+    font-weight: $font-weight-light;
+  }
+}
+
+.profile-list {
+  font-size: $font-small;
+}
+
+.profile-list {
+  .list-heading {
+    color: $color-light-grey;
+  }
+
+  .list-val {
+    color: $color-dark-grey;
+  }
+}
+
+.dialog-title-container {
+  margin-top: -24px !important;
+  margin-left: -24px !important;
+  margin-right: -24px !important;
+  background-color: $primary-color;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.dialog-title {
+  color: $color-white;
+}
+
+.dialog-message {
+  font-size: $font-medium;
+  color: $color-dark-grey;
+  font-weight: $font-weight-regular;
+}
+
+.list-header {
+  font-size: $font-medium;
+  color: $color-dark-grey;
+  font-weight: $font-weight-light;
+}
+
+.list-value {
+  font-size: $font-medium;
+  color: $color-dark-grey;
+  font-weight: $font-weight-regular;
+}
+
+.next-previous-button {
+  background-color: $primary-color;
+  color: $color-white !important;
+}
+
+.close-button {
+  background-color: transparent;
+  color: $color-white !important;
+  font-size: $font-large;
+  border: 0;
+  outline: none;
+}
+
+// remove outline on focus
+.close-button:focus {
+  outline: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: $color-white;
+  border-top: 1px solid $color-alpha-black;
+  height: 100px;
+  width: 100%;
+  padding: 0 20px;
+  display: table;
+}
+
+.footer-row {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-list {
+  li {
+    margin: 10px 0;
+  }
+}
+
+.home-row-first {
+  padding: 0 0 10px 0;
+}
+
+.home-row-middle {
+  padding: 10px 0;
+}
+
+.home-row-last {
+  padding: 10px 0 0 0;
+}
+
+.home-list-title {
+  font-size: $font-large;
+  color: $color-light-grey;
+  font-weight: $font-weight-regular;
+  letter-spacing: 0.02em;
+}
+
+.home-list-subtitle {
+  font-size: $font-small;
+  color: $color-light-grey;
+  font-weight: $font-weight-light;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.home-list-loader-text {
+  font-size: $font-xlarge;
+  color: $color-dark-grey;
+  font-weight: $font-weight-regular;
+  line-height: 38px;
+}
+
+.tally-name-container {
+  .tally-name {
+    line-height: 32px !important;
+    margin: 0 0 0 5px;
+  }
+}
+
+.icon-button {
+  padding: 0 10px 0 5px !important;
+  font-weight: $font-weight-bold;
+}
+
+.icon-button {
+  .icon {
+    margin: -2px 0 0 0;
+  }
+  .text {
+    margin: 0 0 0 5px;
+  }
+}
+
+.company-sync-loader-container {
+  position: relative;
+}
+
+.company-sync-loader {
+  position: absolute;
+  right: 0;
+}
+
+.company-sync-loader-percent {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  font-size: 0.6em;
+  color: $color-light-grey;
+}
